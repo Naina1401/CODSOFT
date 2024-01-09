@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+<link rel="stylesheet" href="asset/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Jost:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" class="display" disabled>
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="cancel">C</button>
+      <button onclick="appendToDisplay('(')" class="operator"> ( </button>
+      <button onclick="appendToDisplay(')')" class="operator"> ) </button>
+      <button onclick="appendToDisplay('/')" class="operator"> ÷ </button>
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('*')" class="operator"> × </button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('-')" class="operator"> - </button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('+')" class="operator"> + </button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')" class="operator">.</button>
+      <button onclick="calculate()" class="operator">=</button>
+    </div>
+  </div>
+  <script src="asset/script.js"></script>
+</body>
+</html>

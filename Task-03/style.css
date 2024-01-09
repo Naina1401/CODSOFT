@@ -1,0 +1,66 @@
+body {
+    font-family:'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a19999; 
+    
+    color: #fff; /* Text color */
+  }
+  
+  .calculator {
+    border: 2px solid #a0a0a0;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #e2e9cf; /* Calculator background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    width: 300px;
+  }
+  
+  .display {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: right;
+    background-color:#adadad ; /* Display background color */
+    color: #fff; /* Display text color */
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #adadad; /* Button background color */
+    
+    color: #000000; /* Button text color */
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #777; /* Button hover background color */
+  }
+
+  
+  .operator{
+    background-color: #0a0a0a; 
+    color: #fff; /* Equals button text color */
+  }
+  
+  .cancel{
+    background-color: red;
+    color: #ffffff; 
+  }
